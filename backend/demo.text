@@ -1,0 +1,28 @@
+const body = req.body;
+  // console.log(body);
+  const { _id } = req.user;
+  console.log(_id, req.body);
+  try {
+    const UserData=await UserModel.findByIdAndUpdate(
+      _id,//user _id
+      {
+        $push:{expenses:body}
+      },
+      {new:true} //for returning the updated documents
+    )
+    return res.status(200).json({
+      message:"Expense Add successfully",
+      success:true,
+      data:UserData?.expenses
+
+    })
+    
+  } catch (err) {
+    res.status(500).json({
+      message:"SOMETHING WRONG",
+      success:false,
+      error:err
+    })
+    
+  }
+  

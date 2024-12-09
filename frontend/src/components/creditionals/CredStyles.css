@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 720px;
+  background: url("https://t4.ftcdn.net/jpg/04/60/71/01/360_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg")
+    no-repeat;
+  background-size: cover;
+}
+.form-container {
+  width: 40%;
+  height: auto;
+  background-color: azure;
+  margin: 150px;
+  border-radius: 15px;
+  
+  box-shadow: 10px 10px 10px 10px blue;
+}
+.form-container input{
+    width: 80%;
+    margin: 20px;
+    font-size: 20px;
+    transition: all;
+    border-radius: 5px;
+    
+}
+.form-container button{
+    width: 80%;
+    font-size: 18px;
+    background-color: blue;
+    border-radius: 10px;
+    color: bisque;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.form-container button:hover{
+    background-color: aqua;
+    color: black;
+}
+.form-container .routing-pages{
+    margin: 18px;
+}
+.form-container .underline-remove{
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    
+}
